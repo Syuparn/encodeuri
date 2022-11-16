@@ -4,7 +4,8 @@ import {render} from 'ink';
 import meow from 'meow';
 import App from './ui';
 
-const cli = meow(`
+const cli = meow(
+	`
 	Usage
 	  $ encodeuri
 
@@ -14,12 +15,14 @@ const cli = meow(`
 	Examples
 	  $ encodeuri --name=Jane
 	  Hello, Jane
-`, {
-	flags: {
-		name: {
-			type: 'string'
+`,
+	{
+		flags: {
+			name: {
+				type: 'string'
+			}
 		}
 	}
-});
+);
 
-render(<App name={cli.flags.name}/>);
+render(<App name={cli.flags.name} />);

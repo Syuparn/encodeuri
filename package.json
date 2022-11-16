@@ -27,18 +27,43 @@
 			],
 			"rewritePaths": {
 				"source/": "dist/"
-			}
+			},
+			"compile": false
 		}
 	},
 	"xo": {
 		"extends": "xo-react",
 		"rules": {
-			"react/prop-types": "off"
+			"react/prop-types": "off",
+			"react/jsx-tag-spacing": "off",
+			"comma-dangle": "off",
+			"@typescript-eslint/comma-dangle": "off",
+			"react/function-component-definition": [
+				2,
+				{
+					"namedComponents": "arrow-function"
+				}
+			],
+			"jsx-quotes": [
+				"error",
+				"prefer-double"
+			],
+			"import/extensions": [
+				"error",
+				"ignorePackages",
+				{
+					"js": "never",
+					"jsx": "never",
+					"ts": "never",
+					"tsx": "never"
+				}
+			]
 		}
 	},
 	"devDependencies": {
 		"@ava/typescript": "^3.0.1",
 		"@sindresorhus/tsconfig": "^3.0.1",
+		"@types/node": "^18.11.9",
 		"@types/react": "^18.0.25",
 		"ava": "^5.1.0",
 		"chalk": "^4.1.2",
@@ -47,6 +72,6 @@
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"ink-testing-library": "^2.1.0",
 		"typescript": "^4.8.4",
-		"xo": "^0.39.1"
+		"xo": "^0.52.4"
 	}
 }

@@ -1,4 +1,5 @@
-import React, {FC} from 'react';
+import React from 'react';
+import type {FC} from 'react';
 import {Text} from 'ink';
 
 const App: FC<{name?: string}> = ({name = 'Stranger'}) => (
@@ -7,5 +8,4 @@ const App: FC<{name?: string}> = ({name = 'Stranger'}) => (
 	</Text>
 );
 
-module.exports = App;
 export default App;
