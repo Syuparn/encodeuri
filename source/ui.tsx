@@ -1,11 +1,11 @@
 import React from 'react';
 import type {FC} from 'react';
-import {Text} from 'ink';
+import URLConversionBox from './components/URLConversionBox';
 
-const App: FC<{name?: string}> = ({name = 'Stranger'}) => (
-	<Text>
-		Hello, <Text color="green">{name}</Text>
-	</Text>
-);
+const App: FC<{name?: string}> = ({name = 'Stranger'}) => {
+	name;
+
+	return <URLConversionBox />;
+};
 
 export default App;
