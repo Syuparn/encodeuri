@@ -1,11 +1,11 @@
 import React from 'react';
 import type {FC} from 'react';
-import URLConversionBox from './components/URLConversionBox';
+import Top from './components/pages/Top';
 
 const App: FC<{name?: string}> = ({name = 'Stranger'}) => {
 	name;
 
-	return <URLConversionBox />;
+	return <Top />;
 };
 
 export default App;
