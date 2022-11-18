@@ -1,5 +1,5 @@
 // TODO: use class instead?
-interface URLParameters {
+interface URIParameters {
 	scheme: string;
 	host: string;
 	port: number;

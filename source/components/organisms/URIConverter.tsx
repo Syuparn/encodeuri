@@ -1,10 +1,10 @@
 import React from 'react';
 import type {FC} from 'react';
-import URLConversionBox from './URLConversionBox';
+import URIConversionBox from './URIConversionBox';
 
 type Props = {};
 
-const URLConverter: FC<Props> = () => {
+const URIConverter: FC<Props> = () => {
 	const scheme = [{value: 'http'}];
 	// TODO: generate from parameters
 	const uri = 'https://example.com/foo/bar?baz=quux&hoge=fuga';
@@ -24,7 +24,7 @@ const URLConverter: FC<Props> = () => {
 	const fragments = [{value: ''}];
   */
 
-	return <URLConversionBox title="Scheme" data={scheme} generatedURI={uri} />;
+	return <URIConversionBox title="Scheme" data={scheme} generatedURI={uri} />;
 };
 
-export default URLConverter;
+export default URIConverter;

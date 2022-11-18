@@ -10,7 +10,7 @@ type Props = {
 	generatedURI: string;
 };
 
-const URLConversionBox: FC<Props> = ({title, data, generatedURI}) => {
+const URIConversionBox: FC<Props> = ({title, data, generatedURI}) => {
 	return (
 		<Box marginX={1} flexDirection="column">
 			<CaptionedTable title={title} data={data} />
@@ -27,4 +27,4 @@ const URLConversionBox: FC<Props> = ({title, data, generatedURI}) => {
 	);
 };
 
-export default URLConversionBox;
+export default URIConversionBox;
