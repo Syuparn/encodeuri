@@ -3,7 +3,7 @@ import type {ReactElement} from 'react';
 import {Text, Box} from 'ink';
 import Table from 'ink-table';
 
-type StringDict = {[key: string]: string};
+type StringDict = Record<string, string>;
 
 type Props<T extends StringDict> = {
 	readonly title: string;

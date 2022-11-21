@@ -1,11 +1,9 @@
 import React from 'react';
 import type {FC} from 'react';
-import Top from './components/pages/Top';
+import Top from './components/pages/top';
 
-const App: FC<{name?: string}> = ({name = 'Stranger'}) => {
-	name;
+type Props = {name?: string};
 
-	return <Top />;
-};
+const App: FC<Props> = () => <Top />;
 
 export default App;
